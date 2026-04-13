@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Banner 600x600</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #e0e0e0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+
+  .banner {
+    width: 600px;
+    height: 600px;
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', sans-serif;
+    position: relative;
+    overflow: hidden;
+    background: url('truck-bg.jpg') center center / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+  }
+
+  .banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(160deg, rgba(4,21,37,0.93) 0%, rgba(10,58,101,0.88) 40%, rgba(13,92,143,0.75) 70%, rgba(26,111,168,0.65) 100%);
+  }
+
+  .banner-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 32px 24px 28px;
+  }
+
+  .label {
+    display: inline-block;
+    align-self: flex-start;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffb347;
+    letter-spacing: 1px;
+    border: 2px solid rgba(255,179,71,0.5);
+    padding: 8px 22px;
+    border-radius: 50px;
+    margin-bottom: 12px;
+  }
+
+  .main-copy {
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 0;
+  }
+  .main-highlight {
+    display: block;
+    font-size: 72px;
+    font-weight: 900;
+    background: linear-gradient(135deg, #ffb347, #ff8f1c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.1;
+    margin-bottom: 12px;
+    letter-spacing: -2px;
+    white-space: nowrap;
+  }
+
+  .sub-copy {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.7;
+    opacity: 0.85;
+    margin-bottom: 20px;
+  }
+
+  .cta-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #e85d2a, #f07b4f);
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    padding: 22px 48px;
+    border-radius: 14px;
+    text-decoration: none;
+    box-shadow: 0 6px 24px rgba(232,93,42,0.4);
+  }
+
+  .logo-area {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 0.4;
+    letter-spacing: 1px;
+  }
+</style>
+</head>
+<body>
+<div class="banner">
+  <div class="banner-overlay"></div>
+  <div class="banner-content">
+    <div class="label">リースバック・新規リース専門</div>
+    <div class="main-copy">トラックはそのまま、</div>
+    <div class="main-highlight">資金だけ手元に。</div>
+    <div class="sub-copy">トラックの資産価値を査定して車両価値を資金に。<br>持つのでなく借りる時代、リース会計が変わる今こそ。</div>
+    <a href="#" class="cta-btn">無料相談はこちら</a>
+    <div class="logo-area">トラバック｜株式会社ワークステーション</div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Banner 1200x300</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #e0e0e0; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+
+  .banner {
+    width: 1200px;
+    height: 300px;
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', sans-serif;
+    position: relative;
+    overflow: hidden;
+    background: url('truck-bg.jpg') center center / cover no-repeat;
+    display: flex;
+    color: #fff;
+  }
+
+  .banner-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(4,21,37,0.93) 0%, rgba(10,58,101,0.88) 40%, rgba(13,92,143,0.75) 70%, rgba(26,111,168,0.65) 100%);
+  }
+
+  .banner-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    padding: 20px 36px;
+    gap: 24px;
+  }
+
+  .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .label {
+    display: inline-block;
+    align-self: flex-start;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffb347;
+    letter-spacing: 1px;
+    border: 2px solid rgba(255,179,71,0.45);
+    padding: 5px 18px;
+    border-radius: 50px;
+  }
+
+  .main-copy {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .main-highlight {
+    font-size: 72px;
+    font-weight: 900;
+    background: linear-gradient(135deg, #ffb347, #ff8f1c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -2px;
+    line-height: 1;
+  }
+
+  .sub-copy {
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 0.8;
+    line-height: 1.4;
+  }
+
+  .right {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    width: 500px;
+  }
+  .right-points {
+    display: flex;
+    gap: 14px;
+    width: 100%;
+    justify-content: center;
+  }
+  .point-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.18);
+    padding: 14px 22px;
+    border-radius: 12px;
+    white-space: nowrap;
+  }
+  .point-check {
+    color: #ffb347;
+    font-size: 22px;
+  }
+  .cta-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #e85d2a, #f07b4f);
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px 44px;
+    border-radius: 14px;
+    text-decoration: none;
+    box-shadow: 0 6px 24px rgba(232,93,42,0.4);
+    white-space: nowrap;
+    width: 100%;
+  }
+  .sub-info {
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.45;
+    white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+<div class="banner">
+  <div class="banner-overlay"></div>
+  <div class="banner-content">
+    <div class="left">
+      <div class="label">リースバック・新規リース専門</div>
+      <div class="main-copy">
+        トラックはそのまま、
+        <span class="main-highlight">資金だけ手元に。</span>
+      </div>
+      <div class="sub-copy">車両価値を資金に変える｜持つより借りる時代へ</div>
+    </div>
+    <div class="right">
+      <div class="right-points">
+        <div class="point-item"><span class="point-check">&#10004;</span> 年間50億円の実績</div>
+        <div class="point-item"><span class="point-check">&#10004;</span> 最短即日で対応</div>
+      </div>
+      <a href="#" class="cta-btn">無料相談はこちら</a>
+      <div class="sub-info">トラバック｜株式会社ワークステーション</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
